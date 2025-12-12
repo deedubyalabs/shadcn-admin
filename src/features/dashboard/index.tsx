@@ -13,7 +13,11 @@ import { TopNav } from '@/components/layout/top-nav'
 import { ProfileDropdown } from '@/components/profile-dropdown'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+<<<<<<< HEAD
 import { ColorThemeSelector } from '@/components/color-theme-selector'
+=======
+import { Analytics } from './components/analytics'
+>>>>>>> 4c15e003ff7113a649382d2f5037de12287a4c8d
 import { Overview } from './components/overview'
 import { RecentSales } from './components/recent-sales'
 
@@ -45,9 +49,7 @@ export function Dashboard() {
           <div className='w-full overflow-x-auto pb-2'>
             <TabsList>
               <TabsTrigger value='overview'>Overview</TabsTrigger>
-              <TabsTrigger value='analytics' disabled>
-                Analytics
-              </TabsTrigger>
+              <TabsTrigger value='analytics'>Analytics</TabsTrigger>
               <TabsTrigger value='reports' disabled>
                 Reports
               </TabsTrigger>
@@ -181,6 +183,9 @@ export function Dashboard() {
                 </CardContent>
               </Card>
             </div>
+          </TabsContent>
+          <TabsContent value='analytics' className='space-y-4'>
+            <Analytics />
           </TabsContent>
         </Tabs>
       </Main>

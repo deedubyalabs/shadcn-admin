@@ -1,3 +1,37 @@
+## v2.2.1 (2025-11-06)
+
+### Fix
+
+- **style**: update data attribute class in authenticated layout (#249)
+- prevent navigation to 500 page during development (#240)
+- **style**: apply variant 'destructive' to sign-out buttons (#236)
+- add missing space in profile form (#235)
+
+### Refactor
+
+- enhance tables and update table layout (#234)
+
+## v2.2.0 (2025-10-09)
+
+### Feat
+
+- add analytics tab in dashboard page (#220)
+- add extra AppTitle component for sidebar header (#216)
+- update 2-column sign in page (#213)
+
+### Fix
+
+- update sidebar menu chevron direction in RTL mode (#229)
+- pagination button spacing (#215)
+- upgrade lucide-react to solve antivirus warning (#211)
+
+### Refactor
+
+- move sidebar related components into app-sidebar
+- change SidebarInset component from 'main' to 'div'
+- replace extra main container query with content container query
+- replace inline svg logo with logo component (#214)
+
 ## v2.1.0 (2025-08-23)
 
 ### Feat
