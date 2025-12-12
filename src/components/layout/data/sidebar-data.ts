@@ -1,6 +1,6 @@
 import {
   Construction,
-  LayoutDashboard,
+  WalletCards,
   Monitor,
   Bug,
   ListTodo,
@@ -53,12 +53,12 @@ export const sidebarData: SidebarData = {
       title: 'General',
       items: [
         {
-          title: 'Dashboard',
+          title: 'MyWallet',
           url: '/',
-          icon: LayoutDashboard,
+          icon: WalletCards,
         },
         {
-          title: 'Tasks',
+          title: 'Projects',
           url: '/tasks',
           icon: ListTodo,
         },

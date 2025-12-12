@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
@@ -14,6 +13,7 @@ import { TopNav } from '@/components/layout/top-nav'
 import { ProfileDropdown } from '@/components/profile-dropdown'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+import { ColorThemeSelector } from '@/components/color-theme-selector'
 import { Overview } from './components/overview'
 import { RecentSales } from './components/recent-sales'
 
@@ -26,6 +26,7 @@ export function Dashboard() {
         <div className='ms-auto flex items-center space-x-4'>
           <Search />
           <ThemeSwitch />
+          <ColorThemeSelector />
           <ConfigDrawer />
           <ProfileDropdown />
         </div>
@@ -35,9 +36,6 @@ export function Dashboard() {
       <Main>
         <div className='mb-2 flex items-center justify-between space-y-2'>
           <h1 className='text-2xl font-bold tracking-tight'>Dashboard</h1>
-          <div className='flex items-center space-x-2'>
-            <Button>Download</Button>
-          </div>
         </div>
         <Tabs
           orientation='vertical'
@@ -63,7 +61,7 @@ export function Dashboard() {
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Total Revenue
+                    Home Health Score
                   </CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -79,9 +77,9 @@ export function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>$45,231.89</div>
+                  <div className='text-2xl font-bold'>92/100</div>
                   <p className='text-muted-foreground text-xs'>
-                    +20.1% from last month
+                    +2% from last month
                   </p>
                 </CardContent>
               </Card>
@@ -192,26 +190,14 @@ export function Dashboard() {
 
 const topNav = [
   {
-    title: 'Overview',
+    title: 'MyWallet',
     href: 'dashboard/overview',
     isActive: true,
     disabled: false,
   },
   {
-    title: 'Customers',
+    title: 'Chat UI',
     href: 'dashboard/customers',
-    isActive: false,
-    disabled: true,
-  },
-  {
-    title: 'Products',
-    href: 'dashboard/products',
-    isActive: false,
-    disabled: true,
-  },
-  {
-    title: 'Settings',
-    href: 'dashboard/settings',
     isActive: false,
     disabled: true,
   },

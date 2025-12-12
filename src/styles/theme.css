@@ -61,7 +61,7 @@
 }
 
 @theme inline {
-  --font-inter: 'Inter', 'sans-serif';
+  --font-geist: 'Geist', 'sans-serif';
   --font-manrope: 'Manrope', 'sans-serif';
 
   --radius-sm: calc(var(--radius) - 4px);

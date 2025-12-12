@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/header'
 import { ProfileDropdown } from '@/components/profile-dropdown'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+import { ColorThemeSelector } from '@/components/color-theme-selector'
 import { ForbiddenError } from '@/features/errors/forbidden'
 import { GeneralError } from '@/features/errors/general-error'
 import { MaintenanceError } from '@/features/errors/maintenance-error'
@@ -32,6 +33,7 @@ function RouteComponent() {
         <Search />
         <div className='ms-auto flex items-center space-x-4'>
           <ThemeSwitch />
+          <ColorThemeSelector />
           <ConfigDrawer />
           <ProfileDropdown />
         </div>

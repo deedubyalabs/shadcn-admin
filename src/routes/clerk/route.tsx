@@ -8,6 +8,7 @@ import { ConfigDrawer } from '@/components/config-drawer'
 import { AuthenticatedLayout } from '@/components/layout/authenticated-layout'
 import { Main } from '@/components/layout/main'
 import { ThemeSwitch } from '@/components/theme-switch'
+import { ColorThemeSelector } from '@/components/color-theme-selector'
 
 export const Route = createFileRoute('/clerk')({
   component: RouteComponent,
@@ -44,6 +45,7 @@ function MissingClerkPubKey() {
         <SidebarTrigger variant='outline' className='scale-125 sm:scale-100' />
         <div className='space-x-4'>
           <ThemeSwitch />
+          <ColorThemeSelector />
           <ConfigDrawer />
         </div>
       </div>
